@@ -1,6 +1,23 @@
 INTRODUCTION
 
-    it can generate a file which is including the information of block's position and block's power.
+    It can generate a file which is including the information of block's position and block's power.
+
+VERSION
+
+1.0: 1. implemented data input, output and process 
+
+1.1: 1. add some judgment function to make sure that there isn't worry in I/O operating;
+     2. add some "useless" file such as readme; 
+     3. record some test file in test directory;
+
+2.0: 1. change the input function to avoid the error happened in the different of file end between Windos and liunx; 
+     2. rewrite Makefile, and add debug mode and release mode:
+        1. default mode is release mode 
+        2. if you want to change mode using following commands： 
+            #make mode = "debug" or "release"
+     3. solve the problem that the upper and right boundary is not consided;
+     4. add a judgment function to judge if the output is worry obviously; 
+    
 
 INSTALLATION
 
