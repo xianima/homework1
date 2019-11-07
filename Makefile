@@ -1,6 +1,6 @@
-ver = debug
+mode = debug
 
-ifeq ($(ver),debug)
+ifeq ($(mode),debug)
 ccflags = -c -g 
 else
 ccflags = -c

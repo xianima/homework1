@@ -14,7 +14,7 @@ VERSION
      2. rewrite Makefile, and add debug mode and release mode:
         1. default mode is release mode 
         2. if you want to change mode using following commands： 
-            #make mode = "debug" or "release"
+            make mode = debug or release
      3. solve the problem that the upper and right boundary is not consided;
      4. add a judgment function to judge if the output is worry obviously; 
     
