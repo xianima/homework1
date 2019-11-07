@@ -1,0 +1,8 @@
+# number of block in x direction
+100
+#  number of block in y direction
+200
+# window size
+# lower left point x and y location
+1.0	1.0
+5.0	6.0

@@ -1,0 +1,7 @@
+# block lower left x    block lower left y    block upper right x    block upper right y    block power value
+  -1.0    -1.0     1.0     2.5     3.0
+   1.0    -1.0     3.0     2.5     5.2
+   3.0    -1.0     5.0     2.5     0.0
+  -1.0     2.5     1.0     6.0     0.0
+   1.0     2.5     3.0     6.0     0.1
+   3.0     2.5     5.0     6.0     0.0

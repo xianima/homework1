@@ -1,0 +1,2 @@
+# location x	location y	power value
+2.4	4.1	-2.35

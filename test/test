@@ -1,0 +1,74 @@
+1. the first test is using the default input files and verify the output.
+    # block lower left x    block lower left y    block upper right x    block upper right y    block power value
+   1.0     1.0     2.3     3.5     5.2
+   2.3     1.0     3.7     3.5     0.0
+   3.7     1.0     5.0     3.5     0.0
+   1.0     3.5     2.3     6.0     0.1
+   2.3     3.5     3.7     6.0     0.0
+   3.7     3.5     5.0     6.0     0.0
+   the result is correct.
+
+   then we test some wrong situation:
+
+    a)if we input error commands like "./main -c config.txt " or "./main -f config.txt"
+        we can receive:
+        error commands
+        Usage: ./main -c <file> -p <file> -o <file> 
+	    -c <file> config input file(e.g.config.txt)
+	    -p <file> power input file(e.g.power.txt)
+	    -o <file> output file
+
+    b)if there are some logical errors in our input files, such as the position of power data is outside of the floor.
+        power.txt:#location x location y  power value
+                    0.1 1.0  2.35
+                    1.1 1.5  2.89
+                    2.3 5.1  0.07 
+        we can receive:
+        error data in power file
+    
+2. a)verify if the coordinate can be negative
+    output:
+    # block lower left x    block lower left y    block upper right x    block upper right y    block power value
+    -1.0    -1.0     1.0     2.5     0.0
+    1.0    -1.0     3.0     2.5     5.2
+    3.0    -1.0     5.0     2.5     0.0
+    -1.0     2.5     1.0     6.0     0.0
+    1.0     2.5     3.0     6.0     0.1
+    3.0     2.5     5.0     6.0     0.0
+    the result is correct.
+
+   b)verify if power location can be negative
+    power.txt:
+    #location x location y  power value
+    1.0 1.0  2.35
+    1.1 1.5  2.89
+    2.3 5.1  0.07
+    -0.9 -0.9 1
+    -1.0 -1.0 2
+    output:
+    # block lower left x    block lower left y    block upper right x    block upper right y    block power value
+  -1.0    -1.0     1.0     2.5     3.0
+   1.0    -1.0     3.0     2.5     5.2
+   3.0    -1.0     5.0     2.5     0.0
+  -1.0     2.5     1.0     6.0     0.0
+   1.0     2.5     3.0     6.0     0.1
+   3.0     2.5     5.0     6.0     0.0
+    the result is correct.
+
+3. verify more blocks and larger area:
+    config.txt:
+        #number of block in x direction
+        10
+        #number of block in y direction 
+        10
+        #window size
+        #lower left point x and y location
+        1.0  1.0
+        50.0  60.0
+    output file is in test/3/output.txt 
+    the result is correct.
+
+4. verfy more power data:
+    output file is in test/4/output.txt
+
+

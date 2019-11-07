@@ -1,0 +1,8 @@
+#	block lower left x	block lower left y	block upper right x	block upper right y	block power value
+1.0	1.0	2.3	3.5	2.4
+2.3	1.0	3.7	3.5	0.0
+3.7	1.0	5.0	3.5	0.1
+1.0	3.5	2.3	6.0	2.9
+2.3	3.5	3.7	6.0	0.0
+3.7	3.5	5.0	6.0	1.2
+#	This data can be trusted

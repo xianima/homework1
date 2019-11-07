@@ -1,0 +1,3 @@
+# block lower left x    block lower left y    block upper right x    block upper right y    block power value
+  100.0    100.0    500.0    350.0     0.0
+  100.0    350.0    500.0    600.0     0.0
