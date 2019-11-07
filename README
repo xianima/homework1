@@ -1,0 +1,42 @@
+INTRODUCTION
+
+    it can generate a file which is including the information of block's position and block's power.
+
+INSTALLATION
+
+1. unzip and untar the file using following commands
+    tar -zxvf xiaaohw1_final.tar.gz
+
+2. go to the installation dirction
+    cd homework1/
+
+3. build program
+    make
+
+4. run program
+    ./main -c config.txt -p power.txt 
+
+5. To remove all the outputs of compilation , type "make clean". 
+
+USING 
+
+this program has the following files:
+
+0. Makefile - for building program
+
+1. input.c and input.h -read parameters from input files 
+
+2. output.c and output.h -write outcomes to output files
+
+3. process.c and process.h -calulate with the parameters from input
+
+4. main.c
+
+run the program with following commands:
+
+    ./main -c <config file> -p <power file> -o <output file>
+    -c and -p is necessary, but -o isn't. If there isn't output file the default file is output.txt.
+
+LIMITATION
+
+This program can only be used in each block is the same.
